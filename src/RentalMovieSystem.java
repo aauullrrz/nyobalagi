@@ -24,7 +24,7 @@ public class RentalMovieSystem {
             System.out.printf("%d. %s (Harga per hari: $%.2f)\n", movieChoice + 1, availableMovies[movieChoice], pricesPerDay[movieChoice]);
         }
 /**
- * 
+ *
  */
         System.out.print("Masukkan nomor film yang ingin disewa: ");
         movieChoice = scanner.nextInt();
@@ -36,6 +36,7 @@ public class RentalMovieSystem {
             double dailyRate = pricesPerDay[movieChoice - 1];
             System.out.print("Masukkan durasi sewa (dalam hari): ");
             int rentalDays = scanner.nextInt();
+            System.out.println("Selamat");
             rentals.add(new MovieRental(getAvailableMovie(availableMovies, movieChoice), rentalDays, dailyRate));
             Iterator var9 = rentals.iterator();
 
